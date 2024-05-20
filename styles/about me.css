@@ -1,0 +1,156 @@
+body {
+  background: #fceedd; /* #f7d6ac */
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 25px;
+  /* width: 70%; */
+  font-family: "Dosis", sans-serif;
+  text-align: left;
+  /* z-index: 4; */
+  /* position: absolute; */
+  /* left: 200px;
+  top: 700px; */
+}
+
+.content {
+  padding: 40px;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.column {
+  display: grid;
+  row-gap: 15px;
+  /* grid-template-rows: 1fr 1fr; */
+}
+
+
+  /* height: 200px; */
+
+.circle {
+  border-radius: 400%;
+  width: 30%;
+  height: 350px;
+  background-color: #cf4a43;
+  position: absolute;
+  left: 200px;
+  top: 700px;
+  z-index: 0;
+  opacity: 0.5;
+  animation: slide-left 7s ease forwards;
+}
+
+.column3 {
+  font-size: 18px;
+  display: inline-grid;
+  grid-template-columns: 300px 300px;
+  column-gap: 100px;
+  align-items: center;
+
+}
+
+dl {
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+}
+
+.box {
+  /* position: absolute; */
+  /* top: 100px;
+  left: 300px; */
+  padding: 60px;
+  width: 65%; 
+  background-color: #cf4a43; /* rgb(236, 169, 213) */
+}
+
+.smallbox {
+  padding: 100px;
+  margin: 10px;
+  
+  background-color: rgb(253, 214, 200);
+  /* width: 50%; */
+  z-index: 4;
+  object-position: center;
+}
+
+.photo {
+  right: -140px;
+  bottom: -25px; /* Corrected the unit from x to px */
+}
+
+
+
+#typing-effect {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 600;
+  min-width: 200px;
+  z-index: 5;
+  font-family: Cormorant Garamond;
+  animation: typing 5s steps(40, end), cursor 1s infinite;
+}
+
+@keyframes cursor {
+  50% { border-color: transparent; } 
+}
+
+
+ /*.animated-text span1 {
+  /* position: relative; 
+}*/
+
+/*.animated-text span1::before {
+  content: "Stefaniia";
+  color: #cf4a43;
+  animation: words 20s infinite;
+}
+
+.animated-text span1::after {
+  content: "";
+  /* position: absolute; 
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: rgb(253, 214, 200);
+  border-left: 2px solid #cf4a43;
+  right: -8px;
+  animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
+}
+*/
+
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(50);
+  }
+  30% {
+    transform: translateX(400px);
+  }
+  60% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(-20px);
+    width:0%;
+  }
+}
+
+
+
+@media screen and (max-width: 800px) {
+.circle {
+  border-radius: 400%;
+  width: 30%;
+  height: 200px;
+}
+.column3{
+  display: inline;
+  gap: 20px;
+}
+}

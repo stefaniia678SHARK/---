@@ -1,0 +1,104 @@
+
+/*rgb(204, 195, 114);*/
+header {
+    grid-area: header;
+    grid: inline-grid;
+}
+
+
+.image {
+    margin: 5px;
+    padding: 5px;
+    /*border: #043d06 solid 4px;*/
+}
+
+nav {
+    float: right; 
+    display: inline-grid;
+    grid-auto-flow: column;
+    font-size: 20px;
+    grid-gap: 40px;
+    padding: 20px;
+}
+
+.image {
+    display: inline-grid;
+    grid-gap: 50px;
+    align-items: center;
+    grid-auto-flow: column;
+  }
+
+.special {
+  font-size: 40px;
+}
+
+
+.link1 .link2 .link3 .link4 {
+    color: black;
+}
+
+h1{
+    font-size: 50px;
+    font-family: Cormorant Garamond;
+
+}
+
+h2{
+    font-size: 50px;
+}
+
+p{
+    font-size: 30px;
+  }
+
+
+a {
+    color: #cf4a43;
+}
+
+a:hover {
+    background-color: #a7a6a6;
+    color: rgb(130, 3, 94);
+}
+
+
+a.active {
+    background-color: rgb(1, 38, 75);
+    color: white;
+}
+
+footer {
+    grid-area: footer;
+}
+
+span{
+    opacity: 0;
+    transition: all 5s ease;
+  }
+  
+  span.fade{
+    opacity:1;
+    color:#7f0255;
+  }
+
+  #effect {
+    display: none; /* Initially hidden */
+  }
+  
+  #effect:target {
+    display: block; /* Display when the target is active */
+  }
+  
+  .scroll-trigger {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #dc5851;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 999;
+  }
+  
+

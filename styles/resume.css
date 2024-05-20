@@ -1,0 +1,43 @@
+body {
+    background:#fceedd /* #f7d6ac*/;
+}
+
+/*.resumecontainer{
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: 700px;
+    grid-template-rows: 100px 100px ;
+}
+*/
+
+.resumecontainer {
+    display: grid;
+    padding: 20px;
+    margin: 20px;
+    column-gap: 120px;
+    grid-template-columns: 700px 320px 2fr;
+    grid-template-rows: 200px 100px;
+    height: 800px;
+}
+
+.text {
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;
+}
+
+
+.text1 {
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;
+    display:grid;
+    grid-template-columns:120px 150px 2fr;
+    grid-template-rows: 60px 130px;
+
+}
+
+@media screen and (max-width: 800px) {
+.resumecontainer{
+    display: inline;
+
+}
+}
